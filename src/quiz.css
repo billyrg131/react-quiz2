@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+.main {
+	margin: 0;
+	padding: 0;
+}
+#h1 {
+	font-size: 31px;
+	text-align: center;
+}
+.nav {
+	border: 1px solid black;
+	width: 100%;
+}
+ul,
+li {
+	display: grid;
+	grid-template-columns: 0.5fr 0.5fr;
+	grid-gap: 60px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+}
+.flagDiv {
+	display: grid;
+	justify-items: center;
+}
+.quizDiv {
+	border: 1px solid black;
+}
+.flagImg {
+	width: 190px;
+	height: 140px;
+}
+.question {
+	display: grid;
+	justify-items: center;
+}
+.choiceDiv {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+	justify-self: center;
+	padding: 10px;
+}
+.choiceBtn {
+	font-size: 19px;
+	text-align: center;
+	width: 20vw;
+	border: 1px solid black;
+}
+.choiceBtn:hover {
+	background-color: black;
+	font-size: 22px;
+	text-align: center;
+	width: 20vw;
+	padding: 9px;
+	color: white;
+	font-weight: bolder;
+	border: 3px solid white;
+}
+
+.review {
+	display: grid;
+	justify-items: center;
+	margin: auto;
+	margin-top: 30px;
+	background-color: gray;
+
+	width: 50vw;
+	box-shadow: -10px 10px 10px black;
+	padding: 10px;
+}
+.reviewh1 {
+	font-size: 33px;
+	color: blue;
+}
+.reviewp {
+	font-weight: bolder;
+	font-size: 22px;
+	color: black;
+}
+.restart {
+	width: 15vw;
+	font-size: 19px;
+	background-color: crimson;
+	color: white;
+}
+.restart:hover {
+	border: 2px solid white;
+	border-radius: 20px;
+	color: blue;
+	width: 20vw;
+}
+.nxtLvlBtn {
+	background-color: lime;
+	width: 15vw;
+	font-size: 19px;
+	color: red;
+}
+.nxtLvlBtn:hover {
+	border: 1px solid blue;
+	border-radius: 20px;
+	width: 20vw;
+}
+.countryLevel {
+	margin: 0;
+	width: 100%;
+}
+.cLvlBtnDiv {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+}
+.cLvlBtn {
+	background-color: crimson;
+	text-align: center;
+	color: white;
+	font-size: 19px;
+	font-weight: 900;
+	border: 2px solid black;
+	width: 20vw;
+}
+.cLvlBtn:hover {
+	background-color: white;
+	color: black;
+	font-size: 22px;
+	font-weight: 900;
+	border: 2px solid red;
+	width: 25vw;
+}
+.flagLevel {
+	margin: 0;
+	width: 100%;
+}
+.flgLvlBtnDiv {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+}
+.flgLvlBtn {
+	background-color: crimson;
+	text-align: center;
+	color: white;
+	font-size: 19px;
+	font-weight: 900;
+	border: 2px solid black;
+	width: 20vw;
+}
+.flgLvlBtn:hover {
+	background-color: white;
+	color: black;
+	font-size: 22px;
+	font-weight: 900;
+	border: 2px solid red;
+	width: 25vw;
+}
+.regionDiv {
+	width: 100%;
+}
+.regionh1 {
+	text-align: center;
+}
+.showRegion {
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+	grid-gap: 10px;
+	width: 100%;
+	text-align: center;
+}
+#regionImg {
+	width: 200px;
+	height: 180px;
+}
+figcaption {
+	border: 1px solid red;
+	font-size: 30px;
+	font-weight: 600;
+}
+figcaption:hover {
+	background: crimson;
+	color: white;
+	font-size: 34px;
+	font-weight: 800;
+	padding: 12px;
+}
+@media (max-width: 450px) {
+	.choiceDiv {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-row-gap: 10px;
+		grid-template-areas:
+			'btn1'
+			'btn2'
+			'btn3'
+			'btn4';
+	}
+	.choiceBtn {
+		width: 50vw;
+		grid-area: btn1 btn2 btn3 btn4;
+		font-size: 17.5px;
+		padding: 12px;
+	}
+	.choiceBtn:hover {
+		width: 50vw;
+		grid-area: btn1 btn2 btn3 btn4;
+		font-size: 17.5px;
+		padding: 12px;
+	}
+	.flgLvlBtnDiv {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			'btn1'
+			'btn2'
+			'btn3'
+			'btn4';
+		font-size: 15px;
+	}
+	.flgLvlBtn {
+		grid-area: btn1, btn2, btn3, btn4;
+		width: 50vw;
+		margin: 7px;
+	}
+	.flgLvlBtn:hover {
+		grid-area: btn1, btn2, btn3, btn4;
+		width: 50vw;
+		margin: 7px;
+	}
+	.cLvlBtnDiv {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			'btn1'
+			'btn2'
+			'btn3'
+			'btn4';
+		justify-items: center;
+		font-size: 15px;
+	}
+	.countryLevel h1 {
+		text-align: center;
+	}
+	.cLvlBtn {
+		width: 50vw;
+		margin: 10px;
+		grid-area: btn1, btn2, btn3, btn4;
+		font-size: 17.5px;
+	}
+	.cLvlBtn:hover {
+		width: 50vw;
+		margin: 10px;
+		font-size: 17.5px;
+	}
+	.showRegion {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			'btn'
+			'btn1'
+			'btn2'
+			'btn3';
+	}
+	.showRegion figure {
+		grid-area: btn, btn1, btn2, btn3;
+	}
+	.regionCap {
+		font-size: 15px;
+		width: 90px;
+	}
+	.regionCap:hover {
+		padding: 0;
+		width: 90px;
+		font-size: 17px;
+	}
+	.regionImg {
+		width: 90px;
+	}
+	.nav {
+		width: 100vw;
+		font-size: 14.5px;
+		padding: 10px;
+	}
+}
+@media (min-width: 450px) and (max-width: 1080px) {
+	.showRegion {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			'btn btn1'
+			'btn2 btn3';
+	}
+	.showRegion figure {
+		grid-area: btn, btn1, btn2, btn3;
+	}
+	.regionCap {
+		font-size: 18px;
+		width: 90px;
+	}
+	.regionCap:hover {
+		padding: 0;
+		width: 90px;
+		font-size: 18px;
+	}
+	.regionImg {
+		width: 90px;
+	}
+	.choiceBtn {
+		text-align: center;
+		font-size: 15px;
+		padding: 6px;
+	}
+	.choiceBtn:hover {
+		text-align: center;
+		font-size: 17px;
+	}
+}
+.question {
+	padding: 10px;
+}
