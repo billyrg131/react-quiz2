@@ -38,7 +38,7 @@ function FlagQuizWAfrica1() {
 						Restart Game
 					</button>
 					<li className="nxtLvlBtn">
-						<Link to="#">Next Level</Link>
+						<Link to="/flags/Africa/West-Africa/levels/2">Next Level</Link>
 					</li>
 				</div>
 			) : (
