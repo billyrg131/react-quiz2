@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "d68fd9281ff473fd45f6",
+    "revision": "de6b7e635ab63e4ad7be",
     "url": "/react-quiz2/static/css/main.d1906552.chunk.css"
   },
   {
-    "revision": "d68fd9281ff473fd45f6",
-    "url": "/react-quiz2/static/js/main.a4f63748.chunk.js"
+    "revision": "de6b7e635ab63e4ad7be",
+    "url": "/react-quiz2/static/js/main.684a87db.chunk.js"
   },
   {
     "revision": "3c61bab5380cc0f10cc8",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/react-quiz2/static/media/Flag_of_Somalia.50802e3a.svg"
   },
   {
-    "revision": "c988475be976f9ef535c144c7f5f4364",
+    "revision": "c414cce86adffc2f4a1848014853ae81",
     "url": "/react-quiz2/index.html"
   }
 ];
